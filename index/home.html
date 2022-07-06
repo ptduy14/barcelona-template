@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../style/responesive.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png">
+    <title>Barcelona</title>
+</head>
+<body>
+    <!-- toast message ui -->
+    <div class="toast">
+        <div class="toast__icon">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="toast__body">
+            <div class="toast-title">
+                Notification
+            </div>
+            <div class="toast-msg">
+                Sorry, the function is in the finishing stage
+            </div>
+        </div>
+        <div class="toast__close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <!-- croll to top -->
+    <div class="scroll-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <!-- contact -->
+    <div class="contact__overlay"></div>
+    <div class="contact-box">
+        <div class="contact__btn">
+            Get In touch
+        </div>
+        <div class="contact-from-container">
+            <h1 class="from-title">Contact with us</h1>
+            <div class="contact-from">
+                <form action="">
+                    <div class="from-group">
+                        <input type="text" placeholder="Your Name">
+                        <input type="text" placeholder="Email">
+                    </div>
+                    <div class="from-group">
+                        <input type="text" placeholder="Phone Number">
+                    </div>
+                    <div class="from-group">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div id="send-msg-btn" class="btn-primany btn-send-contact">Send Message</div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end contact -->
+    <div class="header">
+        <div class="header-unfixed active">
+            <div class="header-logo">
+                <a href=""><img src="../assets/img/logo-barca.png" alt=""></a>
+            </div>
+            <div class="header-menu">
+                <ul>
+                    <li><a href="#first-team">first team</a></li>
+                    <li><a href="#manager">manager</a></li>
+                    <li><a href="./tickets.html">tickets</a></li>
+                    <li><a href="../index/progress.html">partner</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </div>
+            <div class="header-search">
+                <form action="">
+                    <input class="input-search" type="text">
+                    <div onclick="showSearchInputTwo()" class="header-search__search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </form>
+                <div class="header-search__hearth header-fixed-color">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+            </div>
+        </div>
+        <div class="header-fixed">
+            <div class="container">
+                <div class="header-logo">
+                    <a href=""><img src="../assets/img/logo-barca.png" alt=""></a>
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="#first-team">first team</a></li>
+                        <li><a href="#manager">manager</a></li>
+                        <li><a href="./tickets.html">tickets</a></li>
+                        <li><a href="../index/progress.html">partner</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form action="">
+                        <input class="input-search" type="text">
+                        <div onclick="showSearchInputTwo()" class="header-search__search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </form>
+                    <div class="header-search__hearth header-fixed-color">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- header moblie responesive -->
+        <div class="header-moblie-responesive">
+            <div class="header-moblie-top js-header-moblie-top">
+                <div class="wrapper">
+                    <div class="header-moblie-icon-menu js-header-moblie-icon-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-moblie-logo">
+                        <img src="https://1.bp.blogspot.com/-8nR8OpXVm8g/YLUGNsq5nBI/AAAAAAAABzI/kx95P6cd7EktddalFVT1UzI7a8X71WGJwCLcBGAsYHQ/s512/Fc%2BBarcelona%2BLogo%2B2021-2022%2Bfor%2BDream%2BLeague%2BSoccer%2B2019.png" alt="">
+                        <span>fc barcelone</span>
+                    </div>
+                    <div class="header-moblie-login">
+                        <a href="../index/login.html"><i class="fa-solid fa-user-group"></i> login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-moblie-nav js-header-moblie-nav">
+                <div class="header-moblie-nav__box js-header-moblie-nav__box">
+                    <ul class="nav-list">
+                        <li><a href="../index/home.html">home</a></li>
+                        <li><a href="#first-team">first team</a></li>
+                        <li><a href="#manager">manager</a></li>
+                        <li><a href="./tickets.html">tickets</a></li>
+                        <li><a href="../index/progress.html">partner</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                        <li><a class="js-open-contact">get in touch</a></li>
+                    </ul>
+                    <div class="search-box js-search-box">
+                        <div class="search-box__icon js-search-box__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="search-box__input">
+                            <form action="">
+                                <input type="text">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-moblie__close-icon js-header-moblie__close-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="background-video">
+            <video autoplay loop muted>
+                <source src="../assets/video/barca-video.mp4" type="video/mp4">
+            </video>
+            <div class="background-video-text">
+                <div class="background-video__content">
+                    <div class="slogan">
+                        <h1>Més que un club</h1>
+                        <h1>Blaugrana, Azulgrana, Barça</h1>
+                    </div>
+                    <div class="navbar">
+                        <div class="navbar__item">
+                            <p>Buy Tickets</p><span>></span>
+                        </div>
+                        <div class="navbar__item"> 
+                            <p>Plan a visit</p> <span>></span>
+                        </div>
+                        <div class="navbar__item">                
+                            <p>Stadium</p> <span>></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-video__logo">
+                    <div class="partner-logo-ri">
+                        <img class="size-img" src="https://www.dlf.pt/png/big/13/138842_rakuten-logo-png.png" alt="">
+                    </div>
+                    <div class="partner-logo-le">
+                        <img class="size-img" src="https://www.seekpng.com/png/full/1-15781_nike-logo-png-nike-logo-png-white.png" alt="">
+                        <img class="size-img" src="https://viet.beko.com/wp-content/uploads/2022/01/beko-white-logo-1.png" alt="">
+                        <img class="size-img" src="https://goldenrace.com/images/partners/1xbet.png" alt="">
+                        <img class="size-img" src="https://images.contentstack.io/v3/assets/blt57caa63e0368f6e8/bltd3e856080dfb9b44/620b66654ae5ae6845c6ae29/OPPO-LOGO_%D6%B9%D7%9E%D6%B2%D6%BC_RGB.gif" alt="">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- background img moblie -->
+        <div class="background-img">
+            <img src="https://www.fcbarcelona.com/photo-resources/2019/11/15/ea1926dc-fe06-460f-ac24-7be75866e8f7/comunicacio-institucional.jpg?width=431&height=269" alt="">
+            <div class="background-img__text">
+                <div class="background-img__text-title">
+                    Agreement with Sixth Street for acquisition of 10% of the club's LaLiga TV rights
+                </div>
+                <div class="background-img__text-desc">
+                    <i class="fa-solid fa-clock"></i> 2 hrs ago
+                </div>
+            </div>
+        </div>
+        <!-- end background img moblie -->
+        <div id="first-team" class="first-team">
+            <div class="first-team__title">
+                <h2>first team</h2>
+            </div>
+            <div class="all-team container">
+                <!-- row goalkeepers -->
+                <div class="row-team">
+                    <div class="row-team__title">
+                        GOALKEEPERS
+                    </div>
+                    <div class="row-team__cotainer">
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/11/09/e00e0d35-ca10-412d-a505-ebec04a12d82/mini_1200x750-ter_stegen.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>1</h2> <h2 class="firt-name">Marc-André</h2> <h2 class="last-name">ter Stegen</h2></div>
+                                <div class="position-f-player">Goalkeeper</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>327</span></li>
+                                    <li><span class="para-f-player__title">Barça Clean Sheets</span> <span>121</span></li>
+                                    <li><span class="para-f-player__title">Barça Saves</span> <span>767</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>49</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>12</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>86</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/aae47baa-57b5-4912-b236-26380ede4f63/mini_1200x750-neto.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>13</h2><h2 class="firt-name"></h2><h2>Neto</h2></div>
+                                <div class="position-f-player">Goalkeeper</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>21</span></li>
+                                    <li><span class="para-f-player__title">Barça Clean Sheets</span> <span>6</span></li>
+                                    <li><span class="para-f-player__title">Barça Saves</span> <span>42</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>4</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>11</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row defender -->
+                <div class="row-team">
+                    <div class="row-team__title">
+                        DEFENDERS
+                    </div>
+                    <div class="row-team__cotainer">
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/d8dd9886-d88b-49f5-9a12-1e3be2cbe831/mini_1200x750-dest.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>2</h2> <h2 class="firt-name">Sergiño</h2><h2>Dest</h2></div>
+                                <div class="position-f-player">Defender</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>72</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>4</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>31</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/d3727ca5-2d41-45e5-ae4e-f641cbff0a0c/mini_1200x750-03-PIQUE.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>3</h2> <h2 class="firt-name">Gerard</h2><h2>Piqué</h2></div>
+                                <div class="position-f-player">Defender</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>606</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>52</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>7</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>40</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/758e9794-fa6a-4a45-897f-656d35560705/mini_1200x750-araujo.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>4</h2> <h2 class="firt-name">Ronald</h2><h2>Araújo</h2></div>
+                                <div class="position-f-player">Defender</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>82</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>6</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>1</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>43</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>4</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/0e48c4b3-a165-4613-aedb-f034f7cbe974/mini_1200x750-lenglet.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>15</h2> <h2 class="firt-name">Clément</h2><h2>Lenglet</h2></div>
+                                <div class="position-f-player">Defender</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>159</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>7</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>2</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>21</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/7c2e427b-72d5-4184-b0c0-7ed2ea33e52e/mini_1200x750-jordi_alba.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>18</h2> <h2 class="firt-name">Jordi</h2><h2>Alba</h2></div>
+                                <div class="position-f-player">Defender</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>428</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>25</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>85</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>44</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>12</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/dc5d8cf9-a90d-4255-aff5-e2b4fab73b3c/mini_1200x750-mingueza.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>22</h2> <h2 class="firt-name">Óscar</h2><h2>Mingueza</h2></div>
+                                <div class="position-f-player">Defender</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>66</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>2</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>5</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>27</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>2</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/84ca6745-a237-4e8e-a987-f8a66941bdd5/mini_1200x750-umtiti.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>23</h2> <h2 class="firt-name">Samuel</h2><h2>Umtiti</h2></div>
+                                <div class="position-f-player">Defender</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>133</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>2</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>1</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row defender -->
+                <div class="row-team">
+                    <div class="row-team__title">
+                        MIDFIELDERS
+                    </div>
+                    <div class="row-team__cotainer">
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/96025c79-3ada-4142-ba84-0786e6ac3146/mini_1200x750-sergio.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>5</h2> <h2 class="firt-name">Sergio</h2><h2>Busquets</h2></div>
+                                <div class="position-f-player">Midfielder</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/42df7d7f-3c83-4657-a0e6-f6e7a9f17ed4/mini_1200x750-riqui.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>6</h2> <h2 class="firt-name"></h2><h2>Riqui Puig</h2></div>
+                                <div class="position-f-player">Midfielder</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>57</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>2</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>3</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>0</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/f2d9a3bc-547d-4d04-8570-ed28ef73eb63/mini_1200x750-pedri.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>16</h2> <h2 class="firt-name"></h2><h2>Pedri</h2></div>
+                                <div class="position-f-player">Midfielder</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>74</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>9</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>7</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>22</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>5</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/0b5fa79f-3bd1-47b7-a204-d9f74d2f8bc6/mini_1200x750-DE_JONG.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>21</h2> <h2 class="firt-name">Frenkie</h2><h2>de Jong</h2></div>
+                                <div class="position-f-player">Midfielder</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>140</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>13</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>15</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>47</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>4</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>5</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/2fc5c066-75a0-454e-a07c-6112fc47ef01/mini_1200x750-sergi_roberto.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>20</h2> <h2 class="firt-name">Sergi</h2><h2>Roberto</h2></div>
+                                <div class="position-f-player">Midfielder</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/34d97089-d9db-4317-a24e-fe26bae22dce/1200x750-NICO.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>14</h2> <h2 class="firt-name"></h2><h2>Nico González</h2></div>
+                                <div class="position-f-player">Midfielder</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- row forwards -->
+                <div class="row-team">
+                    <div class="row-team__title">
+                        FORWARDS
+                    </div>
+                    <div class="row-team__cotainer">
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/64509169-5858-4b44-9963-d1911fb0357d/mini_1200x750-dembele.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>7</h2> <h2 class="firt-name">Ousmane</h2><h2>Dembélé</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/511f37c7-c98f-4467-8ccc-1c96bef0f65a/mini_1200x750-depay.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>9</h2> <h2 class="firt-name">Memphis</h2><h2>Depay</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/03/02/fe874f37-48bf-4192-a29a-02715925054a/mini_1200x750-11-ADAMA.jpg?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>11</h2> <h2 class="firt-name">Adam</h2><h2>Traoré</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/08/17/08ef0f53-53dc-40ec-924a-162651f1bab9/mini_1200x750-braithwaite.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>12</h2> <h2 class="firt-name">Martin</h2><h2>Braithwaite</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/25/fc69a692-acdc-4bd8-a357-f5553601fee1/mini_1200x750-ansu.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>10</h2> <h2 class="firt-name"></h2><h2>Ansu Fati</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2021/11/09/08fbadb6-7098-4719-a174-3e0d8167dc15/Luuk-de-Jong.jpg?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>17</h2> <h2 class="firt-name">Luuk</h2><h2>de Jong</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/03/02/c31a1150-821c-42d1-ac7d-09611a355507/mini_1200x750-25-AUBAMEYANG.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2>25</h2> <h2 class="firt-name"></h2><h2>de Aubameyang</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="team-item__img">
+                                <img src="https://www.fcbarcelona.com/photo-resources/2022/01/04/2fe6505f-7403-41bc-8903-8914fcb16bca/1200x750-ferran_torres-.png?width=470&height=470" alt="">
+                            </div>
+                            <div class="team-item-layer"></div>
+                            <div class="team-item__info">
+                                <div class="name-f-player"><h2></h2> <h2 class="firt-name">Ferran</h2><h2>Torres</h2></div>
+                                <div class="position-f-player">Forward</div>
+                                <ul class="para-f-player">
+                                    <li><span class="para-f-player__title">Barça Appearances</span> <span>681</span></li>
+                                    <li><span class="para-f-player__title">Barça Goals</span> <span>18</span></li>
+                                    <li><span class="para-f-player__title">Barça Assists</span> <span>36</span></li>
+                                </ul>
+                                <ul class="para-f-player para-f-player-bottom">
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>51</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>3</span></li>
+                                    <li><span class="para-f-player__title">2021/2022 Season</span> <span>1</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="manager" class="manager">
+            <div class="manager__name">Xavi</div>
+            <div class="manager__desc">coach</div>
+            <div class="manager-contaner">
+                <div class="manager-contaner__left">
+                    <div class="box-positon"></div>
+                    <div class="manager-img-positon">
+                        <img src="https://www.fcbarcelona.com/photo-resources/2021/11/09/d2b67ae6-98ad-4fc1-8077-fd5ee361c986/1200x750-xavi.png?width=640&height=400" alt="">
+                    </div>
+                </div>
+                <div class="manager-contaner__right">
+                    <div class="manager-contaner-right__title">
+                        Xavi, an absolute legend at FC Barcelona, is a graduate of the FC Barcelona youth system who has gone on to manage the senior team
+                    </div>
+                    <div class="manager-contaner-right__content">
+                        Born in Terrassa on 25 January 1980, Xavi Hernández became first team manager in November 2021. Thus began his second spell at FC Barcelona. His first era at the club was a huge success and lasted 24 years; he started as an U12 and progressed all the way up to the first team. He then left Barça for Al Sadd in Qatar and with that experienced learned, he is coming back home.
+                    </div>
+                    <div class="manager-full-info">
+                        READ FULL BIO <i class="fa-solid fa-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="manager-info-layer">
+                <div class="manager-info-absolute">
+                    <div class="manager-info-absolute__header">
+                        Xavi Hernández
+                    </div>
+                    <div class="manager-info-absolute__body">
+                        <p>Born in Terrassa on 25 January 1980, Xavi Hernández became first team manager in November 2021. Thus began his second spell at FC Barcelona. His first era at the club was a huge success and lasted 24 years; he started as an U12 and progressed all the way up to the first team. He then left Barça for Al Sadd in Qatar and with that experienced learned, he is coming back home.</p>
+                        <p>It all started in 1991/92. He tried different positions before settling for midfield, where he’d gain a place of honour in FC Barcelona history. Since making his first team debut in 1998 under coach Louis van Gaal, Xavi was a regular starter for 17 seasons, always performing brilliantly and helping the side to 25 titles.</p>
+                        <p>After displaying such a footballing brain in the middle of the park, with the ball almost sewn to his foot, the Barça captain departed for Doha. After playing for Al Sadd, he then became the coach and in two and half season he led the team to success and further success – seven trophies in all.</p>
+                        <p>Aside from the material success in the form of silverware, more importantly, he was able to deploy the famous Barça system in the midst of Qatari football. It was all about building up plays from the back, putting together combinations of passes and placing the perfect through balls to the forwards. And whenever the team lost the ball, immediately smothering them to get it back as quickly as possible. He managed to convey all of his Barça DNA to those players, and now looks forward to doing the same as it his beloved lifetime club, FC Barcelona.</p>
+                    </div>
+                    <div class="manager-info-absolute__close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-team">
+            <div class="new-team__title">
+                Barça News
+            </div>
+            <div class="new-team__scarousel">
+                <div class="new-box new-box-one">
+                    <div class="new-box__footer-text">
+                        <span>Club</span>
+                        <span><i class="fa-regular fa-clock"></i> 19 hrs  ago</span>
+                    </div>
+                    <div class="new-box__footer-desc">
+                        <span>FC Barcelona end the 2021/22 season with 16 trophies</span>
+                        <span>The league title for the futsal team rounds off another successful season for the professional first teams at the Club</span>
+                    </div>
+                </div>
+                <div class="new-box new-box-two">
+                    <div class="new-box__footer-text">
+                        <span>Club</span>
+                        <span><i class="fa-regular fa-clock"></i> 19 hrs  ago</span>
+                    </div>
+                    <div class="new-box__footer-desc">
+                        <span>Historic achievement in Velasco's first season</span>
+                        <span>The league title for the futsal team rounds off another successful season for the professional first teams at the Club</span>
+                    </div>
+                </div>
+                <div class="new-box new-box-three">
+                    <div class="new-box__footer-text">
+                        <span>First Team</span>
+                        <span><i class="fa-regular fa-clock"></i> 19 hrs  ago</span>
+                    </div>
+                    <div class="new-box__footer-desc">
+                        <span>BEAT THE CLOCK | Who has played for Barça and Man City?</span>
+                        <span>12 players have represented both clubs. Can you name them all?</span>
+                    </div>
+                </div>
+            </div>
+            <div class="new-team-footer"></div>
+        </div>
+        <div class="ticket-demo">
+            <div class="ticket-demo__content">
+                <div class="ticket-demo__content-title">
+                    FC Barcelona vs AS Roma <br>
+                    Joan Gamper Trophy 2022
+                </div>
+                <div class="ticket-demo__content-desc">
+                    The ticket includes 2 matches: Women's football at 5:30 p.m. and men's football at 9 p.m. <br>
+                    And also, presentation of the FC Barcelona women's and men's squads, animation, photocalls ...
+                </div>
+                <div class="ticket-demo__content-option-btn">
+                    <button class=""><a href="./tickets.html">buy now</a></button>
+                    <div>or</div>
+                    <button class=""><a href="./tickets.html">visit more</a></button>
+                </div>
+                <ul class="ticket-demo__content-nav">
+                    <li><i class="fa-brands fa-algolia"></i> Official website</li>
+                    <li><i class="fa-solid fa-address-card"></i> Avoid Queues & Book Online</li>
+                    <li><i class="fa-brands fa-sellsy"></i> Best seats available</li>
+                    <li><i class="fa-solid fa-lock"></i> 100% Secure Website</li>
+                </ul>
+            </div>
+            <div class="strip_box strip_box-left"></div>
+            <div class="strip_box strip_box-right"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span class="footer-header">Follow FC Barcelona on social media</span>
+        <ul class="footer__scocial-media">
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>   
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </div>      
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>  
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>    
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>   
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>   
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>  
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+        </ul>
+        <span class="footer-end">2022 @ srouce code by ptduy base on fcbarcelona.com</span>
+    </div>
+    <script src="../script/scrip_responsive.js"></script>
+    <script src="../script/script_home.js"></script>
+</body>
+</html>

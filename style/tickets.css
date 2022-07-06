@@ -1,0 +1,433 @@
+.content{
+    background-color: #03022e;
+    width: 100%;
+}
+.main-container{
+    width: 95%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
+    padding: 50px 0;
+
+}
+.ticket-demo{
+    background-image: url('https://cdn.hovia.com/app/uploads/barcelona-nou-camp-football-plain.jpg');
+}
+.main-box-contain{
+    padding-top: 50px ;
+    background-color: white;
+    border-radius: 10px;
+    width: 97%;
+    margin: 0 auto;
+}
+.nav-tickets{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.nav-tickets li{
+    width: 12.5%;
+    text-align: center;
+    border: 1px solid #efefef;
+    cursor: pointer;
+    background-color: #f8f8f8;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav-tickets li::before{
+    content: "";
+    height: 2px;
+    background-color: #33467b;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    left: 0;
+    right: 0;
+    transition: all ease 0.5s;
+    opacity: 0;
+}
+.nav-tickets li:hover::before{
+    width: 100%;
+    opacity: 1;
+}
+.nav-tickets li .dropdown-nav-moblie{
+    display: none;
+}
+.nav-tickets li a,
+.nav-tickets li .dropdown-nav-moblie{
+    color: #727272;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+.full-schadule-contain{
+    padding: 20px 10px;
+    width: 100%;
+}
+.litle-schadule-contain{
+    padding: 20px 0;
+    border-bottom: #cd122d 5px solid;
+}
+.full-schadule-contain .schadule-title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.full-schadule-contain .schadule-title h2{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.full-schadule-contain .schadule-title span{
+    font-size: 11px;
+    color: #727272;
+    display: flex;
+    align-items: center;
+}
+.full-schadule-contain .schadule-title span i{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.schadule-row{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    border-bottom: 0.5px solid rgb(223, 223, 223);
+}
+.schadule-row-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+}
+.schadule-row__match{
+    display: flex;
+    align-items: center;
+    flex: 4;
+    padding-left: 30px;
+}
+.schadule-row__match .name-team{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+}
+.schadule-row__match .team-text{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(90deg,#cd122d,#154284);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.logo-team{
+    height: 40px;
+}
+.logo-team img{
+   padding: 0 10px; 
+   height: 100%;
+}
+.schadule-row__btn{
+    display: flex;
+    justify-content: end;
+}
+.schadule-row__tournament-content{
+    height: 25px;
+    padding: 0 20px;
+    border-right:0.5px solid rgb(223, 223, 223);
+    border-left: 0.5px solid rgb(223, 223, 223);
+}
+.schadule-row__tournament-content .tournament-logo{
+    height: 100%;
+}
+.schadule-row__btn button{
+    padding: 10px 20px;
+    border: none;
+    color: #333;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.schadule-row__btn .btn__groups{
+    padding: 10px 10px;
+}
+.schadule-row__btn .btn__tickets{
+    background-color: #fdc52c;
+    margin-right: 10px;
+}
+.schadule-row__btn .btn__tickets:hover{
+    background-color: #cd122d;
+    color: white;
+}
+.schadule-row__btn .btn__groups:hover{
+    background-color: grey;
+    color: white;
+}
+.schadule-row__date-contain{
+    float: left;
+    flex: 1;
+}
+.schadule-row__date-contain .date{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+}
+.schadule-row__date-contain .time{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.footer-bar{
+    margin: 20px 0;
+    width: 100%;
+    background: linear-gradient(90deg,#cd122d,#154284);
+    height: 10px;
+}
+
+/* ======= end schadule ======= */
+
+/* stadium visit */
+
+.stadium-visit-box{
+    height: 600px;
+    width: 100%;
+    background-image: url('https://www.fcbarcelona.com/photo-resources/2021/04/20/b35c6d17-ab6f-435c-b66b-4d11da5e79e3/_AC55141.jpg?width=1200&height=750');
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.stadium-visit-box::before{
+    content: "";
+    height: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, #03022e, 90%, transparent);
+    position: absolute;
+}
+.stadium-visit-box_text{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+.stadium-visit-box_text .stadium-visit-box_text-title{
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fdc52c;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.stadium-visit-box_text-body{
+    font-size: 12px;
+    color: white;
+    margin-top: 20px;
+}
+.stadium-visit-box_text button{
+    padding: 10px 25px;
+    text-transform: uppercase;
+    background-color: #cd122d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 20px 0 30px 0;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.stadium-visit-box_text button:hover{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    transform: translateY(2px);
+}
+/* ============= end stadium ============ */
+/* promo */
+
+.promo-list{
+    padding: 30px 50px;
+    background-color: white;
+    width: 97%;
+    margin: 0 auto;
+}
+.promo-list__title{
+    font-size: 3vw;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #cd122d;
+    text-transform: uppercase;
+    text-align: center;
+}
+.promo-list__row{
+    margin-top: 30px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+.promo-list__row .promo-item{
+    width: 24%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    cursor: pointer;
+}
+.wrapper{
+    overflow: hidden;
+}
+.promo-list__row .promo-item .promo-item__img{
+    padding-top: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease;
+}
+.promo-img-one{
+    background-image: url('https://www.fcbarcelona.com/photo-resources/2019/08/29/aec9e2ce-c475-4cbd-8319-2fa29ac65c72/3200X2000_TICKETING-PLANIFICA_VISITA.jpg?width=312&height=184');
+}
+.promo-img-two{
+    background-image: url('https://www.fcbarcelona.com/photo-resources/2019/08/29/88b1db0d-5258-4d62-8792-493851941d0b/3200X2000_TICKETING-ENTRADES_CN.jpg?width=312&height=184');
+}
+.promo-img-three{
+    background-image: url('https://www.fcbarcelona.com/photo-resources/2019/08/29/1362b5fd-397c-4a3d-8b29-4a6ac45ca89b/3200X2000_TICKETING-ENTRADES_FAQS.jpg?width=312&height=184');
+}
+.promo-img-four{
+    background-image: url('https://www.fcbarcelona.com/photo-resources/2019/08/29/2b946886-e1aa-450e-b8b5-701bc8085ee7/3200X2000_TICKETING-ENTRADES-VIP.jpg?width=312&height=184');
+}
+.promo-item__text{
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+}
+.promo-item__text .promo-item__text-header{
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.promo-item__text .promo-item__text-body{
+    font-size: 14px;
+    color: #727272;
+}
+.promo-item__text .promo-item__text-footer{
+    margin-top: 40px;
+    color:#154284 ;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: pointer;
+}
+.promo-item__text .promo-item__text-footer i{
+    transition: all 0.5s ease;
+}
+.promo-item:hover .promo-item__img{
+    transform: scale(1.2);
+}
+.promo-item:hover .promo-item__text-footer i{
+    transform: translateX(4px);
+}
+
+/* ============= end promo============== */
+
+/* nother-promo-list */
+
+.another-promo-list{
+    width: 97%;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.another-promo-list .another-promo-list__box{
+    width: 49%;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.another-promo-list .another-promo-list__box .strip_box-left{
+    top: 20px;
+}
+.another-promo-list .another-promo-list__box .strip_box-right{
+    bottom: 20px;
+    top: unset;
+}
+.another-promo-list__box-left{
+    background-image: url('https://cdn.vox-cdn.com/uploads/chorus_asset/file/9554497/20171017_101944.jpg');
+}
+.another-promo-list__box-left::before{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to top, #03022e, 80%, transparent);
+}
+.another-promo-list__box-right{
+    background-image: url('https://pbs.twimg.com/ad_img/1448971222096748568/UZx8pVKO?format=jpg&name=900x900');
+}
+.another-promo-list__box-right::before{
+    content: "";
+    position:absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 50%;
+    width: 100%;
+    background: linear-gradient(to top, #03022e, 90%, transparent);
+}
+.another-promo-list__box-content{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+.another-promo-list__box-title{
+    font-size: 3vw;
+    color: #fdc52c;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.another-promo-list__box-desc{
+    font-size: 12px;
+    color: white;
+    padding: 20px 0;
+}
+.another-promo-list__box-btn{
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: #cd122d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin-bottom: 30px;
+    color: white;
+    font-size: 12px;
+}
+.another-promo-list__box-btn:hover{
+    background: linear-gradient(90deg,#cd122d,#154284);
+    transform: translateY(2px);
+}

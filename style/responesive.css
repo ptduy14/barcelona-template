@@ -1,0 +1,887 @@
+@media (min-width: 1024px) {
+    .header-moblie-responesive{
+        display: none;
+    }
+    .background-img{
+        display: none;
+    }
+    .schadule-row{
+        padding: 20px 10px;
+    }
+    .schadule-row__btn .btn__tickets,
+    .schadule-row__btn .btn__groups{
+        padding: 10px 50px;
+    }
+}
+@media (min-width: 740px) and (max-width: 1023px) {
+    .login-container{
+        width: 100vw;
+        min-height: 100vh;
+    }
+    .login-container__left::before{
+        display: none;
+    }
+    .login-container__right{
+        display: none;
+    }
+    .login-container__left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .login-container__left .login-title{
+        margin-top: 50px;
+        margin-bottom: 120px;
+    }
+    .btn-letgo{
+        margin-top: 0;
+    }
+    /* ticket page */
+    .wrapper{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .header .header-fixed{
+        display: none;
+    }
+    
+    .header-moblie-top{
+        position: fixed;
+        height: 80px;
+        background-color: white;
+        top: -80px;
+        right: 0;
+        left: 0;
+        z-index: 99999;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .header-moblie-top.appear{
+        top: 0;
+        opacity: 1;
+    }
+    .header-moblie-top > .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-moblie-icon-menu{
+        font-size: 40px;
+        line-height: 80px;
+    }
+    .header-moblie-logo{
+        height: 40px;
+        display: flex;
+        align-items: center;
+    }
+    .header-moblie-logo span{
+        margin-left: 10px;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+    }
+    .header-moblie-logo img{
+        height: 100%;
+    }
+    .header-moblie-login{
+        padding: 10px 10px;
+        background-color: #cd122d;
+    }
+    .header-moblie-login a{
+        color: white;
+        text-decoration: none;
+    }
+    .header-moblie-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 999999;
+        display: none;
+    }
+    .header-moblie-nav.open{
+        display: block;
+    }
+    .header-moblie-nav .header-moblie-nav__box{
+        width: 50%;
+        background-color: #181733;
+        height: 100%;
+        padding: 50px 0 30px 30px;
+        position: relative;
+        transform: translateX(-416px);
+        opacity: 0;
+        transition: all ease 0.5s;
+    }
+    .header-moblie-nav .header-moblie-nav__box.open{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    .header-moblie-nav .header-moblie-nav__box ul{
+        list-style: none;
+    }
+    .header-moblie-nav__box ul li{
+        padding: 20px 10px;
+        border-bottom: 0.5px solid #8f8f8f;
+
+    }
+    .header-moblie-nav__box ul li a{
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+    .header-moblie__close-icon{
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        color: white;
+    }
+    .search-box{
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 40px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    .search-box.open{
+        width: 300px;
+    }
+    .search-box .search-box__icon{
+        width: 40px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .search-box__input input{
+        height: 30px;
+        position: absolute;
+        top: 0;
+        outline: none;
+        padding: 10px 10px;
+
+    }
+    .ticket-demo{
+        height: 740px;
+    }
+    .ticket-demo__content-nav{
+        flex-wrap: wrap;
+    }
+    .ticket-demo__content-nav li{
+        width: 50%;
+        padding: 14px 0;
+    }
+    .ticket-demo__content-option-btn{
+        padding-bottom: 30px;
+    }
+    .full-schadule-contain .schadule-title{
+        flex-direction: column-reverse;
+        margin-bottom: 15px;
+    }
+    .full-schadule-contain .schadule-title span{
+        justify-content: center;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .nav-tickets{
+        flex-direction: column;
+        box-shadow: none;
+        display: block;
+        position: absolute;
+        top: 25px;
+        overflow: hidden;
+        height: 45px;
+        border-bottom: #154284 2px solid;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: all 0.5s ease;
+    }
+    .nav-tickets.open{
+        height: 360px;
+    }
+    .nav-tickets li{
+        width: 100%;
+        justify-content: unset;
+        height: 45px;
+        padding-left: 20px;
+        outline: none;
+    }
+    .main-box-contain{
+        position: relative;
+    }
+    .nav-tickets li .dropdown-nav-moblie{
+        display: block;
+        height: 100%;
+        padding: 0 20px;
+        border-left: 1px solid #efefef;
+        border: none;
+    }
+    .nav-tickets li:first-child{
+        display: flex;
+        justify-content: space-between;
+    }
+    .schadule-row{
+        flex-direction: column;
+        height: 150px;
+    }
+    .schadule-row__btn{
+        margin: 30px 0;
+    }
+    .schadule-row__btn button{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px 80px;
+    }
+    .schadule-row-left{
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+    .schadule-row__match .name-team{
+        font-size: 2vw;
+    }
+    .promo-list{
+        padding: 30px 20px;
+    }
+    .promo-list__row{
+        flex-wrap: wrap;
+    }
+    .promo-list__row .promo-item{
+        width: 48%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .promo-list__row .promo-item .promo-item__img{
+        width: 100%;
+        display: block;
+        padding-top: 200px;
+    }
+    .another-promo-list .another-promo-list__box{
+        width: 48%;
+    }
+    .footer .footer__scocial-media{
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer .footer__scocial-media li{
+        width: 32%;
+        margin: 1px;
+    }
+
+    /* home pages */
+    .header .header-unfixed{
+        display: none;
+    }
+    .container{
+        width: 96%;
+    }
+    .team-item__info .name-f-player{
+        flex-direction: column;
+    }
+    .team-item__info .para-f-player-bottom{
+        display: none;
+    }
+    .team-item__info .position-f-player{
+        padding-bottom: 139px;
+    }
+    .team-item:hover .team-item__info{
+        bottom: 3px;
+    }
+    .manager-contaner .manager-contaner__right{
+        padding: 50px 25px 0 0;
+    }
+    .manager-contaner__right .manager-contaner-right__title{
+        font-size: 25px;
+    }
+    .manager-contaner__left .manager-img-positon img{
+        width: 45%;
+        top: 72px;
+    }
+    .manager-info-layer .manager-info-absolute{
+        width: 80%;
+    }
+    .new-team__scarousel{
+        flex-direction: column;
+    }
+    .new-team__scarousel .new-box{
+        width: 100%;
+    }
+    .new-team__scarousel:hover .new-box{
+        width: 100%;
+    }
+    .new-team__scarousel .new-box:hover{
+        width: 100%;
+        cursor: pointer;
+    }
+    .new-team-footer{
+        display: none;
+    }
+    .new-box__footer-desc{
+        bottom: 47px;
+    }
+    .new-team__scarousel .new-box:hover .new-box__footer-desc{
+        bottom: 60px;
+    }
+    .ticket-demo__content-nav li{
+        display: flex;
+    }
+    .ticket-demo__content-nav{
+        width: 78%;
+        margin: 0 auto;
+    }
+    .background-img{
+        display: none;
+    }
+}
+
+@media (max-width: 739px) {
+    .login-container{
+        min-height: 100vh;
+    }
+    .login-footer__right .nav-footer-login{
+        display: flex;
+        margin-top: 20px;
+    }
+    .login-container__right{
+        display: none;
+    }
+    .login-container__left::before{
+        display: none;
+    }
+    .login-container__left{
+        width: 100%;
+        padding: 20px 15px 80px 15px;
+    }
+    .strip_box {
+        display: none;
+    }
+    .login-container__left .login-title{
+        font-size: 16px;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    .login-desc .login-desc-row i{
+        font-size: 14px;
+    }
+    .login-container__left .login-desc span{
+        font-size: 14px;
+        margin-left: 10px;
+    }
+    .login-container__left .logo-header{
+        width: 92px;
+        height: 50px;
+    }
+    .login-footer{
+        flex-direction: column;
+    }
+    .btn-letgo{
+        margin: 0;
+    }
+    .btn-letgo > button{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    .login-input{
+        margin-bottom: 30px;
+    }
+    .login-footer .login-footer__left span,
+    .login-footer__right .nav-footer-login li a{
+        font-size: 11px;
+    }
+
+    /* tickets page */
+    
+    .wrapper{
+        width: 96%;
+        margin: 0 auto;
+    }
+    .header .header-fixed{
+        display: none;
+    }
+    
+    .header-moblie-top{
+        position: fixed;
+        height: 80px;
+        background-color: white;
+        top: -80px;
+        right: 0;
+        left: 0;
+        z-index: 99999;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+    .header-moblie-top.appear{
+        top: 0px;
+        opacity: 1;
+    }
+    .header-moblie-top > .wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-moblie-icon-menu{
+        font-size: 35px;
+        line-height: 80px;
+    }
+    .header-moblie-logo{
+        height: 35px;
+        display: flex;
+        align-items: center;
+    }
+    .header-moblie-logo span{
+        margin-left: 6px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: uppercase;
+    }
+    .header-moblie-logo img{
+        height: 100%;
+    }
+    .header-moblie-login{
+        padding: 8px 10px;
+        background-color: #cd122d;
+    }
+    .header-moblie-login a{
+        color: white;
+        text-decoration: none;
+    }
+    .header-moblie-nav{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 999999;
+        display: none;
+    }
+    .header-moblie-nav.open{
+        display: block;
+    }
+    .header-moblie-nav .header-moblie-nav__box{
+        width: 65%;
+        background-color: #181733;
+        height: 100%;
+        padding: 50px 0 30px 30px;
+        position: relative;
+        transform: translateX(-416px);
+        opacity: 0;
+        transition: all ease 0.5s;
+    }
+    .header-moblie-nav .header-moblie-nav__box.open{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    .header-moblie-nav .header-moblie-nav__box ul{
+        list-style: none;
+    }
+    .header-moblie-nav__box ul li{
+        padding: 20px 10px;
+        border-bottom: 0.5px solid #8f8f8f;
+    
+    }
+    .header-moblie-nav__box ul li a{
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+    }
+    .header-moblie__close-icon{
+        position: absolute;
+        top: 32px;
+        right: 32px;
+        color: white;
+    }
+    .search-box{
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        position: relative;
+        width: 40px;
+        overflow: hidden;
+        transition: all 0.5s ease;
+    }
+    .search-box.open{
+        width: 150px;
+    }
+    .search-box .search-box__icon{
+        width: 40px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+    }
+    .search-box__input input{
+        height: 30px;
+        position: absolute;
+        top: 0;
+        outline: none;
+        padding: 10px 10px;
+    
+    }
+    .ticket-demo{
+        height: 525px;
+    }
+    .ticket-demo__content-nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .ticket-demo__content-nav li{
+        width: 100%;
+        display: flex;
+        padding: 14px 0;
+    }
+    .ticket-demo .ticket-demo__content{
+        width: 90%;
+    }
+    .ticket-demo__content-desc{
+        padding: 11px 0;
+        font-size: 10px;
+    }
+    .ticket-demo__content-title{
+        font-size: 6.5vw;
+    }
+    .stadium-visit-box{
+        height: 300px;
+    }
+    .ticket-demo::before{
+        height: 90%;
+    }
+    .ticket-demo{
+        background-size: inherit;
+    }
+    .ticket-demo__content-option-btn{
+        padding-bottom: 18px;
+    }
+    .full-schadule-contain .schadule-title{
+        flex-direction: column-reverse;
+        margin-bottom: 15px;
+    }
+    .full-schadule-contain .schadule-title span{
+        justify-content: center;
+        width: 100%;
+        padding: 5px 0;
+    }
+    .nav-tickets{
+        flex-direction: column;
+        box-shadow: none;
+        display: block;
+        position: absolute;
+        top: 25px;
+        overflow: hidden;
+        height: 45px;
+        border-bottom: #154284 2px solid;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        transition: all 0.5s ease;
+    }
+    .nav-tickets.open{
+        height: 360px;
+    }
+    .nav-tickets li{
+        width: 100%;
+        justify-content: unset;
+        height: 45px;
+        padding-left: 20px;
+        outline: none;
+    }
+    .main-box-contain{
+        position: relative;
+        width: 100%;
+    }
+    .nav-tickets li .dropdown-nav-moblie{
+        display: block;
+        height: 100%;
+        padding: 0 20px;
+        border-left: 1px solid #efefef;
+        border: none;
+    }
+    .nav-tickets li:first-child{
+        display: flex;
+        justify-content: space-between;
+    }
+    .schadule-row{
+        flex-direction: column;
+        height: 200px;
+    }
+    .schadule-row__btn{
+        width: 100%;
+        justify-content: center;
+        margin: 16px 0;
+    }
+    .schadule-row__btn button{
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px 80px;
+    }
+    .schadule-row-left{
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .schadule-row__match .name-team{
+        font-size: 4vw;
+    }
+    .schadule-row__date-contain{
+        text-align: center;
+        width: 100%;
+    }
+    .schadule-row__match{
+        padding-left: 0;
+        width: 100%;
+        margin: 0 auto;
+        justify-content: space-evenly;
+    }
+    .schadule-row__date-contain .date{
+        font-size: 15px;
+    }
+    .promo-list{
+        padding: 30px 5px;
+    }
+    .promo-list__row{
+        flex-wrap: wrap;
+    }
+    .promo-list__row .promo-item{
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+    .promo-list__row .promo-item .promo-item__img{
+        width: 100%;
+        display: block;
+        padding-top: 200px;
+    }
+    .another-promo-list .another-promo-list__box{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .another-promo-list{
+        flex-wrap: wrap;
+        padding: 50px 5px;
+    }
+    .footer .footer__scocial-media{
+        width: 95%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .footer .footer__scocial-media li{
+        width: 49%;
+        margin: 1px;
+    }
+    .schadule-row__tournament-content .tournament-logo{
+        display: none;
+        border: none;
+        border: none;
+    }
+    .schadule-row__tournament-content{
+        border: none;
+        height: unset;
+    }
+    .full-schadule-contain .schadule-title h2{
+        margin-top: 10px;
+    }
+
+    /* home page */
+
+    .header .header-unfixed{
+        display: none;
+    }
+    .container{
+        width: 96%;
+    }
+    .manager-contaner__left .manager-img-positon img{
+        width: 45%;
+        top: 72px;
+    }
+    .manager-info-layer .manager-info-absolute{
+        width: 100%;
+        padding: 60px 20px;
+    }
+    .new-team__scarousel{
+        flex-direction: column;
+    }
+    .new-team__scarousel .new-box{
+        width: 100%;
+    }
+    .new-team__scarousel:hover .new-box{
+        width: 100%;
+    }
+    .new-team__scarousel .new-box:hover{
+        width: 100%;
+        cursor: pointer;
+    }
+    .new-team-footer{
+        display: none;
+    }
+    .new-box__footer-desc{
+        bottom: 47px;
+    }
+    .new-team__scarousel .new-box:hover .new-box__footer-desc{
+        bottom: 60px;
+    }
+    .ticket-demo__content-nav li{
+        display: flex;
+    }
+    .ticket-demo__content-nav{
+        width: 78%;
+        margin: 0 auto;
+    }
+    .background-video__content{
+        display: none;
+    }
+    .background-video__logo{
+        display: none;
+    }
+    .content .background-video video{
+        display: none;
+    }
+    .background-img{
+        height: 280px;
+        width: 100%;
+        position: relative;
+        padding-bottom: 45px;
+    }
+    .background-img::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(180deg,rgba(8,14,31,0),#080e1f 80%,#080e1f);
+        height: 80%;
+    }
+    .background-img img{
+        height: 100%;
+        width: 100%;
+    }
+    .content .first-team{
+        padding: 30px 0 50px 0;
+    }
+    .background-img__text{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        padding: 15px;
+        color: white;
+    }
+    .background-img__text .background-img__text-title{
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .background-img__text-desc{
+        text-align: center;
+        font-size: 11px;
+        padding: 15px 0;
+    }
+    .row-team__cotainer .team-item{
+        width: 100%;
+    }
+    .team-item__info .para-f-player-bottom{
+        display: none;
+    }
+    .team-item__info .para-f-player li .para-f-player__title{
+        font-size: 11px;
+    }
+    .team-item__info{
+        bottom: -98px;
+    }
+    .team-item:hover .team-item__info{
+        bottom: 0;
+    }
+    .row-team{
+        padding-top: 16px;
+    }
+    .manager-contaner .manager-contaner__left .box-positon{
+        height: 50%;
+        width: 50%;
+        top: -19px;
+    }
+    .manager-contaner__left .manager-img-positon img{
+        width: 95%;
+        top: 5%;
+        left: 10px;
+    }
+    .manager .manager-contaner{
+        flex-direction: column;
+        width: 98%;
+        align-items: center;
+    }
+    .manager-contaner .manager-contaner__right{
+        padding: 0 0;
+    }
+    .manager-contaner__right .manager-contaner-right__title{
+        font-size: 16.5px;
+        text-align: center;
+    }
+    .manager-contaner__right .manager-contaner-right__content{
+        font-size: 11px;
+    }
+    .manager-contaner__right .manager-full-info i, .manager-contaner__right .manager-full-info{
+        font-size: 14px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .manager-contaner .manager-contaner__left{
+        width: 100%;
+        height: 50%;
+    }
+    .manager-contaner .manager-contaner__right{
+        width: 100%;
+        height: 50%;
+        padding: 20px 15px;
+    }
+    .contact-box .contact__btn{
+        display: none;
+    }
+    .new-team__scarousel{
+        margin-top: 37px;
+    }
+    .new-team__scarousel .new-box{
+        height: 95vw;
+    }
+    .new-box__footer-desc span{
+        padding: 0;
+    }
+    .contact-box{
+        left: -700px;
+        width: 100%;
+    }
+
+    .toast.open{
+        right: 0;
+    }
+    .toast{
+        min-width: 380px;
+    }
+    .manager .manager__name{
+        font-size: 16vw;
+    }
+    .manager .manager__desc{
+        font-size: 4.5vw;
+    }
+    .new-team__title{
+        font-size: 8vw;
+    }
+
+    .footer-end{
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .footer__scocial-media__icon{
+        font-size: 15px;
+    }
+}

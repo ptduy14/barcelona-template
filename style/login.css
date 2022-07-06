@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.login-container{
+    position: relative;
+    display: flex;
+}
+.strip_box{
+    position: absolute;
+    height: 200px;
+    width: 25px;
+    background-color: wheat;
+    z-index: 99999999;
+}
+.strip_box-left{
+    bottom: 150px;
+    left: 0;
+    background-color: #154284;
+}
+.strip_box-right{
+    right: 0;
+    top: 150px;
+    background-color: #cf122d;
+}
+.login-container__left{
+    width: 60%;
+    background-color: #181733;
+    padding: 20px 100px 30px 120px;
+    position: relative;
+    z-index: 999;
+}
+.login-container__right{
+    width: 40%;
+    background-image: url("https://barcaid-pro.s3.eu-central-1.amazonaws.com/2021-08/VO210802A12743_med.jpg");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 9;
+}
+.login-container__left .logo-header{
+    width: 107px;
+    height: 62px;
+    margin: 0 auto;
+}
+.login-container__left .logo-header img{
+    width: 100%;
+    height: 100%;
+}
+.login-container__left .login-title{
+    margin: 50px 0;
+    font-size: 30px;
+    color: #fdc52c;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.login-desc .login-desc-row{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+}
+.login-desc .login-desc-row i{
+    font-size: 20px;
+    min-width: 25px;
+}
+.login-container__left .login-desc span{
+    display: block;
+    font-size: 17px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: relative;
+    margin-left: 20px;
+}
+.login-input{
+    width: 100%;
+    position: relative;
+    margin: 50px 0;
+}
+.login-input input{
+    height: 40px;
+    width: 100%;
+    background-color: #181733;
+    border: none;
+    outline: none;
+    border: 2px solid #cf122d;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+} 
+.login-input label{
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#181733;
+    padding: 0 10px;
+    font-size: 18px;
+    transition: all ease 0.2s;
+    pointer-events: none;
+}
+.login-input input:focus + label{
+    top: -10px;
+    font-size: 14px;
+}
+.login-option-title{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.login-option-title > div{
+    height: 2px;
+    flex: 1;
+    background-color: #8b8b99;
+}
+.login-option-title > span{
+    font-weight: bold;
+    margin: 0 5px;
+}
+.login-scocial{
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.login-scocial .login-scocial__btn{
+    width: 50%;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.login-scocial .login-scocial__btn:hover{
+    opacity: 0.8;
+}
+.login-scocial .login-scocial__btn:first-child{
+    margin-right: 5px;
+}
+.login-scocial .login-scocial__btn:last-child{
+    margin-left: 5px;
+}
+.login-scocial .login-scocial__btn span{
+    font-weight: bold;
+    font-size: 14px;
+}
+.login-scocial .login-scocial__btn > div{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+.login-scocial .login-scocial__btn:first-child > div{
+    width: 36px;
+    height: 20px;
+}
+.login-scocial .login-scocial__btn > div > img{
+    width: 100%;
+    height: 100%;
+}
+.btn-letgo{
+    margin: 100px 0;
+}
+.btn-letgo > button{
+    padding: 15px 60px;
+    color: white;
+    font-weight: 400;
+    font-size: 15px;
+    background-color: #cf122d;
+    border: none;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.btn-letgo > button:hover{
+    background-color:#413e8b;
+}
+.btn-letgo > button > i{
+    margin-left: 5px;
+}
+
+/* before */
+
+.login-container__left::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right:-48px;
+    height: 100%;
+    width: 100%;
+    background-color:#181733;
+    z-index: -1;
+    transform: skewX(-5deg);
+}
+
+/* footer login */
+
+.login-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.login-footer .login-footer__left{
+    display: flex;
+    align-items: center;
+}
+.login-footer .login-footer__left .login-footer__left-logo{
+    width: 87px;
+    height: 25px; 
+}
+.login-footer__left-logo img{
+    width: 100%;
+    height: 100%;
+}
+.login-footer .login-footer__left span{
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+    margin-right: 10px;
+}
+.login-footer__right .nav-footer-login{
+    display: flex;
+    list-style: none;
+}
+.login-footer__right .nav-footer-login li{
+    padding: 0 10px;
+    border-right: 1px solid hsla(0,0%,100%,.6);
+}
+.login-footer__right .nav-footer-login li a{
+    color: hsla(0,0%,100%,.6);
+    font-size: 13px;
+    line-height: 10px;
+}
+.login-footer__right .nav-footer-login li:last-child{
+    padding-right: 0;
+    border: none;
+}
+
+
+
+

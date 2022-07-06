@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/home.css">
+    <link rel="stylesheet" href="../fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="../style/tickets.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="../style/responesive.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png">
+    <title>Buy Tickets</title>
+</head>
+<body>
+    <!-- toast message ui -->
+    <div class="toast">
+        <div class="toast__icon">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+        <div class="toast__body">
+            <div class="toast-title">
+                Notification
+            </div>
+            <div class="toast-msg">
+                Sorry, the function is in the finishing stage
+            </div>
+        </div>
+        <div class="toast__close">
+            <i class="fa-solid fa-xmark"></i>
+        </div>
+    </div>
+    <!-- croll to top -->
+    <div class="scroll-top js-scroll-top">
+        <i class="fa-solid fa-angle-up"></i>
+    </div>
+    <!-- end scroll -->
+    <div class="header">
+        <div class="header-fixed js-header-fixed">
+            <div class="container">
+                <div class="header-logo">
+                    <a href="../index/home.html"><img src="../assets/img/logo-barca.png" alt=""></a>
+                </div>
+                <div class="header-menu">
+                    <ul>
+                        <li><a href="../index/home.html">Home</a></li>
+                        <li><a href="#schadule">schadule</a></li>
+                        <li><a href="#stadium">stadium visit</a></li>
+                        <li><a href="#another-promo-list">barca TV</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                </div>
+                <div class="header-search">
+                    <form action="">
+                        <input class="input-search" type="text">
+                        <div onclick="showSearchInputTwo()" class="header-search__search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </form>
+                    <div class="header-search__hearth header-fixed-color">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- header moblie -->
+        <div class="header-moblie-responesive">
+            <div class="header-moblie-top js-header-moblie-top">
+                <div class="wrapper">
+                    <div class="header-moblie-icon-menu js-header-moblie-icon-menu">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <div class="header-moblie-logo">
+                        <img src="https://1.bp.blogspot.com/-8nR8OpXVm8g/YLUGNsq5nBI/AAAAAAAABzI/kx95P6cd7EktddalFVT1UzI7a8X71WGJwCLcBGAsYHQ/s512/Fc%2BBarcelona%2BLogo%2B2021-2022%2Bfor%2BDream%2BLeague%2BSoccer%2B2019.png" alt="">
+                        <span>fc barcelone</span>
+                    </div>
+                    <div class="header-moblie-login">
+                        <a href="../index/login.html"><i class="fa-solid fa-user-group"></i> login</a>
+                    </div>
+                </div>
+            </div>
+            <div class="header-moblie-nav js-header-moblie-nav">
+                <div class="header-moblie-nav__box js-header-moblie-nav__box">
+                    <ul>
+                        <li><a href="../index/home.html">Home</a></li>
+                        <li><a href="#schadule">schadule</a></li>
+                        <li><a href="#stadium">stadium visit</a></li>
+                        <li><a href="#another-promo-list">barca TV</a></li>
+                        <li><a href="./login.html">Login</a></li>
+                    </ul>
+                    <div class="search-box js-search-box">
+                        <div class="search-box__icon js-search-box__icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="search-box__input">
+                            <form action="">
+                                <input type="text">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="header-moblie__close-icon js-header-moblie__close-icon">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="ticket-demo">
+            <div class="ticket-demo__content">
+                <div class="ticket-demo__content-title">
+                    FC Barcelona vs AS Roma <br>
+                    Joan Gamper Trophy 2022
+                </div>
+                <div class="ticket-demo__content-desc">
+                    The ticket includes 2 matches: Women's football at 5:30 p.m. and men's football at 9 p.m. <br>
+                    And also, presentation of the FC Barcelona women's and men's squads, animation, photocalls ...
+                </div>
+                <div class="ticket-demo__content-option-btn">
+                    <button><a href="">buy now</a></button>
+                </div>
+                <ul class="ticket-demo__content-nav">
+                    <li><i class="fa-brands fa-algolia"></i> Official website</li>
+                    <li><i class="fa-solid fa-address-card"></i> Avoid Queues & Book Online</li>
+                    <li><i class="fa-brands fa-sellsy"></i> Best seats available</li>
+                    <li><i class="fa-solid fa-lock"></i> 100% Secure Website</li>
+                </ul>
+            </div>
+            <div class="strip_box strip_box-left"></div>
+            <div class="strip_box strip_box-right"></div>
+        </div>
+        <div class="main-box-contain">
+            <ul class="nav-tickets js-nav-tickets">
+                <li><a href="">football tickets</a> <button class="dropdown-nav-moblie js-dropdown-nav-moblie">more <i class="fa-solid fa-caret-down"></i></button></li>
+                <li><a href="">pack & promotions</a></li>
+                <li><a href="">getting here</a></li>
+                <li><a href="">my tickets</a></li>
+                <li><a href="">group</a></li>
+                <li><a href="">vip tickets</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">faqs</a></li>
+            </ul>
+            <div id="schadule" class="full-schadule-contain">
+                <div class="letile-schadule-contain">
+                    <div class="schadule-title">
+                        <h2>August 2022</h2>
+                        <span><i class="fa-solid fa-earth-europe"></i> All time in peninsular Spantime</span>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SAT 06 AUG</span> <br>
+                                <span class="time">21:00</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/1/1d/Manchester_City_FC_logo.svg/1200px-Manchester_City_FC_logo.svg.png" alt="">
+                                </div>
+                                <div class="name-team">Manchester City</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SUN 14 AUG</span> <br>
+                                <span class="time">KO: TBA</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://seeklogo.com/images/R/Rayo_Vallecano-logo-83EC841FE5-seeklogo.com.png" alt="">
+                                </div>
+                                <div class="name-team">Rayo Vallecano</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="footer-bar"></div>
+                </div>
+                <!-- end schadule month -->
+                <div class="letile-schadule-contain">
+                    <div class="schadule-title">
+                        <h2>September 2022</h2>
+                        <span><i class="fa-solid fa-earth-europe"></i> All time in peninsular Spantime</span>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SAT 06 AUG</span> <br>
+                                <span class="time">21:00</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://seeklogo.com/images/R/Real_Valladolid_Club_de_Futbol-logo-E2828971A8-seeklogo.com.png" alt="">
+                                </div>
+                                <div class="name-team">Real Valladolid</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SUN 14 AUG</span> <br>
+                                <span class="time">KO: TBA</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://seeklogo.com/images/E/Elche_Club_de_Futbol_S_A_D_-logo-0DE0192C71-seeklogo.com.png" alt="">
+                                </div>
+                                <div class="name-team">Elche</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SUN 14 AUG</span> <br>
+                                <span class="time">KO: TBA</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://seeklogo.com/images/V/valencia-cf-70-s-logo-350E9DCFB4-seeklogo.com.png" alt="">
+                                </div>
+                                <div class="name-team">Valencia CF</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="footer-bar"></div>
+                </div>
+                <!-- end schadule month -->
+                <div class="letile-schadule-contain">
+                    <div class="schadule-title">
+                        <h2>May 2023</h2>
+                        <span><i class="fa-solid fa-earth-europe"></i> All time in peninsular Spantime</span>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SAT 06 AUG</span> <br>
+                                <span class="time">21:00</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://seeklogo.com/images/C/club-atletico-osasuna-logo-BB4998DC78-seeklogo.com.png" alt="">
+                                </div>
+                                <div class="name-team">Osasuna</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SUN 14 AUG</span> <br>
+                                <span class="time">KO: TBA</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/f/f1/Real_Sociedad_logo.svg/1200px-Real_Sociedad_logo.svg.png" alt="">
+                                </div>
+                                <div class="name-team">Real Sociedad</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SUN 14 AUG</span> <br>
+                                <span class="time">KO: TBA</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://logos-world.net/wp-content/uploads/2020/11/Real-Betis-Logo.png" alt="">
+                                </div>
+                                <div class="name-team">Real Betis</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="footer-bar"></div>
+                </div>
+                 <!-- end schadule month -->
+                 <div class="letile-schadule-contain">
+                    <div class="schadule-title">
+                        <h2>March 2023</h2>
+                        <span><i class="fa-solid fa-earth-europe"></i> All time in peninsular Spantime</span>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SUN 19 MAR</span> <br>
+                                <span class="time">21:00</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/sco/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" alt="">
+                                </div>
+                                <div class="name-team">Real Madrid</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="schadule-row">
+                        <div class="schadule-row-left">
+                            <div class="schadule-row__date-contain">
+                                <span class="date">SUN 14 AUG</span> <br>
+                                <span class="time">KO: TBA</span>
+                            </div>
+                            <div class="schadule-row__tournament-content">
+                                <img class="tournament-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/LaLiga.svg/2560px-LaLiga.svg.png" alt="">
+                            </div>
+                            <div class="schadule-row__match">
+                                <div class="name-team">FC Barcelona</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/9/91/FC_Barcelona_logo.svg/2020px-FC_Barcelona_logo.svg.png" alt="">
+                                </div>
+                                <div class="team-text">Vs.</div>
+                                <div class="logo-team">
+                                    <img src="https://upload.wikimedia.org/wikipedia/vi/thumb/f/f4/Atletico_Madrid_2017_logo.svg/1200px-Atletico_Madrid_2017_logo.svg.png" alt="">
+                                </div>
+                                <div class="name-team">Atlético de Madrid</div>
+                            </div>
+                        </div>
+                        <div class="schadule-row__btn">
+                            <button class="btn__tickets">Tickets</button>
+                            <button class="btn__groups"><i class="fa-solid fa-user-group"></i> Groups</button>
+                        </div>
+                    </div>
+                    <div class="footer-bar"></div>
+                </div>
+            </div>
+            <div id="stadium" class="stadium-visit-box">
+                <div class="strip_box strip_box-left"></div>
+                <div class="strip_box strip_box-right"></div>
+                <div class="stadium-visit-box_text">
+                    <div class="stadium-visit-box_text-title">
+                        On your visit to the Camp Nou… <br>
+                         Come to Barça Cafe!
+                    </div>
+                    <div class="stadium-visit-box_text-body">
+                        Immerse yourself in the Blaugrana atmosphere and treat your taste buds as an authentic Culer.
+                    </div>
+                    <button>make your booking</button>
+                </div>
+            </div>
+        </div>
+        <div class="promo-list">
+            <div class="promo-list__title">Related</div>
+            <ul class="promo-list__row" >
+                <li class="promo-item">
+                    <div class="wrapper"><div class="promo-item__img promo-img-one"></div></div>
+                    <div class="promo-item__text">
+                        <div class="promo-item__text-top">
+                            <div class="promo-item__text-header">Plan your visit</div>
+                            <div class="promo-item__text-body">Use our interactive map to find your ideal accommodation close to the Camp Nou and the instructions for getting there.</div>
+                        </div>
+                        <div class="promo-item__text-footer">More info <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="wrapper"><div class="promo-item__img promo-img-two"></div></div>
+                    <div class="promo-item__text">
+                        <div class="promo-item__text-top">
+                            <div class="promo-item__text-header">Plan your visit</div>
+                            <div class="promo-item__text-body">Use our interactive map to find your ideal accommodation close to the Camp Nou and the instructions for getting there.</div>
+                        </div>
+                        <div class="promo-item__text-footer">More info <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="wrapper"><div class="promo-item__img promo-img-three"></div></div>
+                    <div class="promo-item__text">
+                        <div class="promo-item__text-top">
+                            <div class="promo-item__text-header">Plan your visit</div>
+                            <div class="promo-item__text-body">Use our interactive map to find your ideal accommodation close to the Camp Nou and the instructions for getting there.</div>
+                        </div>
+                        <div class="promo-item__text-footer">More info <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </li>
+                <li class="promo-item">
+                    <div class="wrapper"><div class="promo-item__img promo-img-four"></div></div>
+                    <div class="promo-item__text">
+                        <div class="promo-item__text-top">
+                            <div class="promo-item__text-header">Plan your visit</div>
+                            <div class="promo-item__text-body">Use our interactive map to find your ideal accommodation close to the Camp Nou and the instructions for getting there.</div>
+                        </div>
+                        <div class="promo-item__text-footer">More info <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="another-promo-list" class="another-promo-list">
+            <div class="another-promo-list__box another-promo-list__box-left">
+                <div class="strip_box strip_box-left"></div>
+                <div class="strip_box strip_box-right"></div>
+                <div class="another-promo-list__box-content">
+                    <div class="another-promo-list__box-title">
+                        BARÇA TV+ is now available
+                    </div>
+                    <div class="another-promo-list__box-desc">
+                        Find out everything you ever wanted to know about your team, with exclusive interviews, documentaries about our players and more than 3,000 blaugrana-themed videos.
+                    </div>
+                    <button class="another-promo-list__box-btn">
+                        learn more
+                    </button>
+                </div>
+            </div>
+            <div class="another-promo-list__box another-promo-list__box-right">
+                <div class="strip_box strip_box-left"></div>
+                <div class="strip_box strip_box-right"></div>
+                <div class="another-promo-list__box-content">
+                    <div class="another-promo-list__box-title">
+                        BARÇA STORE
+                    </div>
+                    <div class="another-promo-list__box-desc">
+                        Get ready for the match! Kits and much more at our online store
+                    </div>
+                    <button class="another-promo-list__box-btn">buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <span class="footer-header">Follow FC Barcelona on social media</span>
+        <ul class="footer__scocial-media">
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-youtube"></i>
+                </div>   
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </div>      
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>  
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-twitter"></i>
+                </div>    
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>   
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>   
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+            <li>
+                <div class="footer__scocial-media__icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>  
+                <div class="footer__scocial-media__desc">
+                    <span>fcbarcelona</span>
+                    <span>@fcbarcelona</span>
+                </div>    
+            </li>
+        </ul>
+        <span class="footer-end">2022 @ srouce code by ptduy base on fcbarcelona.com</span>
+    </div>
+    <script src="../script/script_tickets.js"></script>
+    <script src="../script/scrip_responsive.js"></script>
+</body>
+</html>
