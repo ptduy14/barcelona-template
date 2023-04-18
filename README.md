@@ -1,2 +1,2 @@
-link publish here: https://ptduy14.github.io/fcbarcelona/index/home.html
+link publish here: https://ptduy14.github.io/barcelona-template/index/home.html
 
